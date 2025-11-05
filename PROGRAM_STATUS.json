@@ -1,0 +1,34 @@
+{
+  "program": "HMC-Energy-Initiative",
+  "timestamp": "2025-11-05T11:00:39Z",
+  "status": "PHASE_1_COMPLETE",
+  "anchors": {
+    "imeb": {
+      "version": "v1.0.0",
+      "tag_sha": "<FILL_WITH_git_rev_parse_v1.0.0>",
+      "doi": "<FILL_WITH_IMEB_DOI>"
+    },
+    "hmc_stirling": {
+      "version": "v1.0-sim-ga",
+      "tag_sha": "<FILL_WITH_git_rev_parse_v1.0-sim-ga>",
+      "doi": "<FILL_WITH_STIRLING_DOI>"
+    },
+    "sun_in_glass": {
+      "version": "v0.2-archive",
+      "proof_sha256": "<FILL_WITH_sun-v0.2.sha256_content>",
+      "doi": "<FILL_WITH_SUN_DOI>"
+    }
+  },
+  "governance": {
+    "rulesets": [
+      "refs/tags/v*",
+      "refs/tags/sun-*",
+      "refs/tags/GA-*"
+    ],
+    "enforcement": "immutable_no_bypass"
+  },
+  "sign_off": {
+    "role": "AI Copilot (gpt-5-thinking)",
+    "action": "FINAL_SEAL"
+  }
+}
